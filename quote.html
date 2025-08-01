@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Quote - BSG Construction Corp</title>
+    <meta name="description" content="Request a free quote for your construction project from BSG Construction Corp. Fill out our form to get started.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html">
+                <img src="images/logo.png" alt="BSG Construction Corp" class="logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="quote.html" class="active">GET QUOTE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Quote Hero Section -->
+    <section class="quote-hero">
+        <div class="container">
+            <h1 class="quote-hero-title">REQUEST QUOTE</h1>
+            <p class="quote-hero-subtitle">Fill out the form below to request a quote for your project.</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="section quote-form-section">
+        <div class="container">
+            <div class="quote-form-container">
+                <form id="detailedQuoteForm" class="detailed-quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Property Address</label>
+                        <input type="text" id="address" name="address" placeholder="Street address, City, State, ZIP">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="projectType">Project Type *</label>
+                            <select id="projectType" name="projectType" required>
+                                <option value="">Select project type</option>
+                                <option value="new-construction">New Construction</option>
+                                <option value="home-addition">Home Addition</option>
+                                <option value="renovation">Complete Renovation</option>
+                                <option value="kitchen-remodel">Kitchen Remodel</option>
+                                <option value="bathroom-remodel">Bathroom Remodel</option>
+                                <option value="deck-installation">Deck Installation</option>
+                                <option value="basement-finishing">Basement Finishing</option>
+                                <option value="roofing">Roofing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-25k">Under $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="100k-200k">$100,000 - $200,000</option>
+                                <option value="200k-plus">$200,000+</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="timeline">Desired Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">As soon as possible</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-12-months">6-12 months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="propertyType">Property Type</label>
+                            <select id="propertyType" name="propertyType">
+                                <option value="">Select property type</option>
+                                <option value="single-family">Single Family Home</option>
+                                <option value="townhouse">Townhouse</option>
+                                <option value="condo">Condominium</option>
+                                <option value="commercial">Commercial</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="projectDescription">Project Description *</label>
+                        <textarea id="projectDescription" name="projectDescription" rows="6" placeholder="Please describe your project in detail. Include any specific requirements, materials preferences, or special considerations..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="permits" value="yes">
+                            <span class="checkmark"></span>
+                            I need assistance with permits and approvals
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="design" value="yes">
+                            <span class="checkmark"></span>
+                            I need design and planning services
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consultation" value="yes">
+                            <span class="checkmark"></span>
+                            I would like to schedule an in-person consultation
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        SEND REQUEST
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section contact-info-section">
+        <div class="container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>(508) 809-3338</p>
+                    <span>Mon-Fri: 8AM-6PM</span>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>contact@bsgconstruction.com</p>
+                    <span>We respond within 24 hours</span>
+                </div>
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Response Time</h3>
+                    <p>Same Day</p>
+                    <span>For quote requests</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does it take to receive a quote?</h3>
+                    <p>We typically provide quotes within 24-48 hours for most projects. Complex projects may require an in-person consultation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide free estimates?</h3>
+                    <p>Yes, all our initial consultations and estimates are completely free with no obligation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are you licensed and insured?</h3>
+                    <p>Absolutely. BSG Construction Corp is fully licensed and insured for your protection and peace of mind.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you handle permits?</h3>
+                    <p>Yes, we can handle all necessary permits and approvals required for your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BSG Construction Corp</h3>
+                    <p>Excellence in construction, additions and residential renovations. Over 15 years of experience with quality and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="services.html">New Construction</a></p>
+                    <p><a href="services.html">Renovations</a></p>
+                    <p><a href="services.html">Kitchen & Bath</a></p>
+                    <p><a href="services.html">Deck Installation</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Phone: (508) 809-3338</p>
+                    <p>Email: contact@bsgconstruction.com</p>
+                    <p><a href="contact.html">Full Contact Info</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BSG Construction Corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/quote.js"></script>
+</body>
+</html>
+
